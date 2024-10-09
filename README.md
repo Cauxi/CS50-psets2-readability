@@ -1,29 +1,9 @@
-# psets2-readability
+<strong>NOTE</strong>: Copying this data and using it for your submission will breach the academic honesty policy of CS50. Please make sure to learn the material and solve the problem on your own—it's worth it!
 
-
-Here’s a README file for pset2-readability with the 2024 course links:
-
-pset2-readability
-NOTE: Copying this data and using it for your submission will breach the academic honesty policy of CS50. Make sure to learn the material and solve the problem on your own—it's worth it!
-
-This is my solution to the CS50 "Readability" problem set, implemented in C. You can find the full problem description here: https://cs50.harvard.edu/x/2024/psets/2/readability/
-
+<p>This is my solution to the CS50 "Readability" problem set, implemented in C. You can find the full problem description <a href="https://cs50.harvard.edu/x/2024/psets/2/readability/">here</a>.</p>
 Problem Overview
-In this problem set, I wrote a program that determines the reading grade level of a given text using the Coleman-Liau index. The program calculates the number of letters, words, and sentences in the text and then outputs the corresponding grade level based on the formula.
-
-This problem was solved as part of CS50: Introduction to Computer Science. Uploading my solution to GitHub is done in line with CS50’s academic honesty policy. For additional insights, you can refer to this Reddit discussion.
-
+<p>In this problem set, I wrote a program that determines the reading grade level of a given text using the Coleman-Liau index. The program calculates the number of letters, words, and sentences in the text and then outputs the corresponding grade level based on the formula.</p> <p>This problem was solved as part of <strong>CS50: Introduction to Computer Science</strong>. Uploading my solution to GitHub is done in line with CS50’s academic honesty policy. For additional insights, you can refer to this <a href="https://www.reddit.com/r/cs50/comments/63235w/is_this_reasonable/">Reddit discussion</a>.</p>
 Program Structure
-The main tasks in this program include:
-
-Input: The program prompts the user for a block of text.
-Text Analysis: It then counts the number of letters, words, and sentences in the text.
-Coleman-Liau Index Calculation: Using these counts, the program computes the reading grade level.
-Output: The program prints the grade level, indicating whether the text is suitable for someone in a particular grade.
+<ul> <li><strong>Input</strong>: The program prompts the user for a block of text.</li> <li><strong>Text Analysis</strong>: It counts the number of letters, words, and sentences in the text.</li> <li><strong>Coleman-Liau Index Calculation</strong>: The program computes the reading grade level using the counts.</li> <li><strong>Output</strong>: The program prints the grade level based on the Coleman-Liau index formula.</li> </ul>
 Key Steps:
-Prompt for Text: The program asks the user to input a piece of text for analysis.
-Letter, Word, and Sentence Counting: It uses loops and conditionals to count the number of letters, words, and sentences in the input text.
-Coleman-Liau Index: The formula index = 0.0588 * L - 0.296 * S - 15.8 is used, where L is the average number of letters per 100 words, and S is the average number of sentences per 100 words.
-Print Result: The program outputs the grade level or a special message if the text is too simple (before Grade 1) or too complex (Grade 16+).
-
-Note: This repository does not include any files provided by CS50, such as standard libraries or the Makefile.
+<ol> <li><strong>Prompt for Text</strong>: The program asks the user to input a piece of text for analysis.</li> <li><strong>Letter, Word, and Sentence Counting</strong>: It uses loops and conditionals to count the number of letters, words, and sentences in the input text.</li> <li><strong>Coleman-Liau Index</strong>: The formula `index = 0.0588 * L - 0.296 * S - 15.8` is used to calculate the grade level.</li> <li><strong>Print Result</strong>: The program outputs the grade level or a special message if the text is too simple (before Grade 1) or too complex (Grade 16+).</li> </ol> <p>Note: This repository does not include any files provided by CS50, such as standard libraries or the Makefile.</p>
